@@ -1,0 +1,74 @@
+unit Unit25;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, ExtCtrls, StdCtrls;
+
+type
+  TForm25 = class(TForm)
+    TabControl1: TTabControl;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    Button1: TButton;
+    Edit1: TEdit;
+    Label1: TLabel;
+    Edit2: TEdit;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Button2: TButton;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    Edit9: TEdit;
+    Edit10: TEdit;
+    Label9: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Image1: TImage;
+    Image2: TImage;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form25: TForm25;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm25.Button1Click(Sender: TObject);
+var    c,c1,c2,c3,c4:integer;
+   var x,y,xaob,yaob,a,b:real;
+begin
+  val (edit1.Text,x,c1);
+  val (edit2.Text,xaob,c2);
+  val (edit3.Text,y,c3);
+  val (edit4.Text,yaob,c4);
+
+end;
+
+
+
+end.

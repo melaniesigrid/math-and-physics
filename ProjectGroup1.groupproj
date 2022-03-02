@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{A4C460B2-29D6-4907-ACE9-91B2EFB7C1D5}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="programa.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="C:\Users\Peter\Desktop\Tareas Compu\Chopro\Pedro Veliz Chopro\Project1.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="programa">
+			<MSBuild Projects="programa.dproj"/>
+		</Target>
+		<Target Name="programa:Clean">
+			<MSBuild Targets="Clean" Projects="programa.dproj"/>
+		</Target>
+		<Target Name="programa:Make">
+			<MSBuild Targets="Make" Projects="programa.dproj"/>
+		</Target>
+		<Target Name="Project1">
+			<MSBuild Projects="C:\Users\Peter\Desktop\Tareas Compu\Chopro\Pedro Veliz Chopro\Project1.dproj"/>
+		</Target>
+		<Target Name="Project1:Clean">
+			<MSBuild Targets="Clean" Projects="C:\Users\Peter\Desktop\Tareas Compu\Chopro\Pedro Veliz Chopro\Project1.dproj"/>
+		</Target>
+		<Target Name="Project1:Make">
+			<MSBuild Targets="Make" Projects="C:\Users\Peter\Desktop\Tareas Compu\Chopro\Pedro Veliz Chopro\Project1.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="programa;Project1"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="programa:Clean;Project1:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="programa:Make;Project1:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

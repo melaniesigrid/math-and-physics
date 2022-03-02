@@ -1,0 +1,63 @@
+unit Unit19;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Grids;
+
+type
+  TForm19 = class(TForm)
+    StringGrid1: TStringGrid;
+    Edit1: TEdit;
+    StringGrid2: TStringGrid;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Label1: TLabel;
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form19: TForm19;
+  a,b:array[1..5,1..5]of integer;
+  i,j:integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm19.Button1Click(Sender: TObject);
+begin
+for I := 0 to stringgrid1.rowcount - 1 do
+for j := 0 to stringgrid1.rowcount - 1 do
+
+begin
+a[i,j]:= strtoint(stringgrid1.Cells[i,j]);
+  b[i,j]:= a[i,j]* strtoint(edit1.Text);
+  stringgrid2.Cells[i,j]:= inttostr(b[i,j]);
+end;
+end;
+procedure TForm19.Button2Click(Sender: TObject);
+begin
+stringgrid1.RowCount:=stringgrid1.RowCount+1;
+stringgrid1.colCount:=stringgrid1.colCount+1;
+stringgrid2.RowCount:=stringgrid2.RowCount+1;
+stringgrid2.colCount:=stringgrid2.colCount+1;
+end;
+
+procedure TForm19.Button3Click(Sender: TObject);
+begin
+stringgrid1.RowCount:=stringgrid1.RowCount-1;
+stringgrid1.colCount:=stringgrid1.colCount-1;
+stringgrid2.RowCount:=stringgrid2.RowCount-1;
+stringgrid2.colCount:=stringgrid2.colCount-1;
+end;
+
+end.

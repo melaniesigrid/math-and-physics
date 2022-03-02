@@ -1,0 +1,52 @@
+unit Unit10;
+
+interface
+
+uses
+  Math, Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs,stdctrls,ComCtrls, ExtCtrls,menus;
+
+type
+  TForm10 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Button1: TButton;
+    Label5: TLabel;
+    Edit4: TEdit;
+    MainMenu1: TMainMenu;
+    Matemtica1: TMenuItem;
+    Ecuaciones1: TMenuItem;
+    Fsica1: TMenuItem;
+    N1: TMenuItem;
+    Calculadora1: TMenuItem;
+    Conversiones1: TMenuItem;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form10: TForm10;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm10.Button1Click(Sender: TObject);
+var a,b,c:real; x:real;
+begin
+a:= strtofloatdef(edit1.Text,0);
+b:= strtofloatdef(edit2.Text,0);
+c:=strtofloatdef(edit3.Text,0);
+x:= (power(a,c))/b;
+edit4.Text:= floattostr(x);
+end;
+
+end.

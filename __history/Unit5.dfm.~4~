@@ -1,0 +1,140 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 319
+  ClientWidth = 464
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 96
+    Top = 40
+    Width = 17
+    Height = 27
+    Caption = 'x'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Broadway'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 128
+    Top = 37
+    Width = 17
+    Height = 31
+    Caption = '+'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Broadway'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 230
+    Top = 37
+    Width = 18
+    Height = 31
+    Caption = '='
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Broadway'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Top = 75
+    Width = 19
+    Height = 31
+    Caption = 'a'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Broadway'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 168
+    Top = 75
+    Width = 20
+    Height = 31
+    Caption = 'b'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Broadway'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 192
+    Top = 248
+    Width = 43
+    Height = 31
+    Caption = 'x ='
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Broadway'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 24
+    Top = 224
+    Width = 121
+    Height = 65
+    Caption = 'Calcular '#39'x'#39
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Broadway'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 8
+    Top = 48
+    Width = 65
+    Height = 21
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Left = 151
+    Top = 48
+    Width = 73
+    Height = 21
+    TabOrder = 2
+    Text = 'Edit2'
+  end
+  object Edit3: TEdit
+    Left = 262
+    Top = 48
+    Width = 73
+    Height = 21
+    TabOrder = 3
+    Text = 'Edit3'
+  end
+  object Edit4: TEdit
+    Left = 262
+    Top = 259
+    Width = 97
+    Height = 21
+    TabOrder = 4
+    Text = 'Edit4'
+  end
+end

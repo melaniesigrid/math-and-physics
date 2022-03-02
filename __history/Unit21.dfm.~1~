@@ -1,0 +1,56 @@
+object Form21: TForm21
+  Left = 0
+  Top = 0
+  Caption = 'Geometr'#237'a Anal'#237'tica'
+  ClientHeight = 336
+  ClientWidth = 511
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 72
+    Top = 64
+    Width = 241
+    Height = 41
+    Caption = 'Rectas'
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 72
+    Top = 112
+    Width = 241
+    Height = 41
+    Caption = 'Circunferencias'
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 72
+    Top = 159
+    Width = 241
+    Height = 41
+    Caption = 'Elipses'
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 72
+    Top = 206
+    Width = 241
+    Height = 41
+    Caption = 'Hip'#233'rbolas'
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 72
+    Top = 264
+    Width = 233
+    Height = 33
+    Caption = 'Par'#225'bolas'
+    TabOrder = 4
+  end
+end

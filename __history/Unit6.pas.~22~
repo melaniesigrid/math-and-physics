@@ -1,0 +1,67 @@
+unit Unit6;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Menus;
+
+type
+  TForm6 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Button1: TButton;
+    Edit4: TEdit;
+    Label5: TLabel;
+    Edit5: TEdit;
+    MainMenu1: TMainMenu;
+    Matemtica1: TMenuItem;
+    Ecuaciones1: TMenuItem;
+    Fsica1: TMenuItem;
+    N1: TMenuItem;
+    Calculadora1: TMenuItem;
+    Conversiones1: TMenuItem;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm6.Button1Click(Sender: TObject);
+var discriminante,x1, x2,a,b,c,compro1, compro2,Al: real;
+Control:integer;
+begin
+discriminante:= (strtofloatdef(edit2.Text,0)*strtofloatdef(edit2.Text,0)-4*(strtofloatdef(edit1.Text,0)*(strtofloatdef(edit3.text,0))));
+If discriminante=0 then
+ begin
+edit4.text:= floattostr (((strtofloatdef(edit2.Text,0)*-1))/(2*strtofloatdef(edit1.Text,0)));
+edit5.text:= edit4.text;
+end;
+if discriminante>0 then
+x1:=  ((((strtofloatdef(edit2.Text,0)*-1))+ ((sqrt (discriminante)))) /(2 * strtofloatdef(edit1.Text,0)));
+x2:=  ((((strtofloatdef(edit2.Text,0)*-1))- ((sqrt (discriminante)))) /(2 * strtofloatdef(edit1.Text,0)));
+compro1:= ((strtofloatdef(edit1.Text,0))*sqr(x1))+((strtofloatdef(edit2.Text,0))*x1)+(strtofloatdef(edit3.Text,0));
+compro2:= ((strtofloatdef(edit1.Text,0))*sqr(x2))+((strtofloatdef(edit2.Text,0))*x2)+(strtofloatdef(edit3.Text,0));
+If abs (compro1)>0.3 then
+edit4.Text:=(floattostr(x2))
+else
+If abs(compro2)>0.3 then
+edit4.Text:=(floattostr(x1))
+else
+edit4.Text:= floattostr (x1);
+edit5.Text:= floattostr(x2);
+end;
+end.

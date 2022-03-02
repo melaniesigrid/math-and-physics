@@ -1,0 +1,38 @@
+object Form25: TForm25
+  Left = 0
+  Top = 0
+  Caption = 'Elipses'
+  ClientHeight = 488
+  ClientWidth = 665
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TabControl1: TTabControl
+    Left = 0
+    Top = 0
+    Width = 665
+    Height = 489
+    TabOrder = 0
+    object PageControl1: TPageControl
+      Left = 0
+      Top = 0
+      Width = 665
+      Height = 489
+      ActivePage = TabSheet1
+      TabOrder = 0
+      object TabSheet1: TTabSheet
+        Caption = 'Ecuaci'#243'n de la elipse con centro en (0,0)'
+      end
+      object TabSheet2: TTabSheet
+        Caption = 'Ecuaci'#243'n de la elipse con centro en (h,k)'
+        ImageIndex = 1
+      end
+    end
+  end
+end

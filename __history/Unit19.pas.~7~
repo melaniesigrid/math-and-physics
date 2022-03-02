@@ -1,0 +1,49 @@
+unit Unit19;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Grids;
+
+type
+  TForm19 = class(TForm)
+    StringGrid1: TStringGrid;
+    Edit1: TEdit;
+    StringGrid2: TStringGrid;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Label1: TLabel;
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form19: TForm19;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm19.Button2Click(Sender: TObject);
+begin
+stringgrid1.RowCount:=stringgrid1.RowCount+1;
+stringgrid1.colCount:=stringgrid1.colCount+1;
+stringgrid2.RowCount:=stringgrid2.RowCount+1;
+stringgrid2.colCount:=stringgrid2.colCount+1;
+end;
+
+procedure TForm19.Button3Click(Sender: TObject);
+begin
+stringgrid1.RowCount:=stringgrid1.RowCount-1;
+stringgrid1.colCount:=stringgrid1.colCount-1;
+stringgrid2.RowCount:=stringgrid2.RowCount-1;
+stringgrid2.colCount:=stringgrid2.colCount-1;
+end;
+
+end.

@@ -1,0 +1,38 @@
+object Form14: TForm14
+  Left = 0
+  Top = 0
+  Caption = 'Form14'
+  ClientHeight = 332
+  ClientWidth = 461
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 168
+    Top = 24
+    Width = 97
+    Height = 35
+    Caption = 'F'#237'sica'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clPurple
+    Font.Height = -29
+    Font.Name = 'Broadway BT'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 72
+    Width = 445
+    Height = 33
+    Caption = 'MRU, MRUV, MCU, MCUV'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+end

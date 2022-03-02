@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/01/25 16:33:10.435.pas,C:\Users\Traducciones\Documents\RAD Studio\Projects\Unit1.pas=F:\Melanie Arellano\Chopro.pas</Transaction>
+    <Transaction>2012/01/25 16:33:10.455.dfm,C:\Users\Traducciones\Documents\RAD Studio\Projects\Unit1.dfm=F:\Melanie Arellano\Chopro.dfm</Transaction>
+    <Transaction>2012/01/25 16:42:29.008.dproj,C:\Users\Traducciones\Documents\RAD Studio\Projects\Project1.dproj=F:\Melanie Arellano\programa.dproj</Transaction>
+    <Transaction>2012/01/26 16:10:25.148.pas,F:\Melanie Arellano\Unit2.pas=F:\Melanie Arellano\Conversiones.pas</Transaction>
+    <Transaction>2012/01/26 16:10:25.153.dfm,F:\Melanie Arellano\Unit2.dfm=F:\Melanie Arellano\Conversiones.dfm</Transaction>
+    <Transaction>2012/01/26 16:11:49.590.pas,F:\Melanie Arellano\Conversiones.pas=F:\Melanie Arellano\Unit2.pas</Transaction>
+    <Transaction>2012/01/26 16:11:49.590.dfm,F:\Melanie Arellano\Conversiones.dfm=F:\Melanie Arellano\Unit2.dfm</Transaction>
+    <Transaction>2012/02/10 18:39:13.729.pas,C:\Users\Traducciones\Documents\Melanie\Cole\Programación\Melanie Arellano\Unit3.pas=C:\Users\Traducciones\Documents\Melanie\Cole\Programación\Melanie Arellano\Unit3ecuaciones.pas</Transaction>
+    <Transaction>2012/02/10 18:39:13.741.dfm,C:\Users\Traducciones\Documents\Melanie\Cole\Programación\Melanie Arellano\Unit3.dfm=C:\Users\Traducciones\Documents\Melanie\Cole\Programación\Melanie Arellano\Unit3ecuaciones.dfm</Transaction>
+    <Transaction>2012/02/10 18:42:13.524.pas,C:\Users\Traducciones\Documents\Melanie\Cole\Programación\Melanie Arellano\Unit3ecuaciones.pas=C:\Users\Traducciones\Documents\Melanie\Cole\Programación\Melanie Arellano\Unit3.pas</Transaction>
+    <Transaction>2012/02/10 18:42:13.524.dfm,C:\Users\Traducciones\Documents\Melanie\Cole\Programación\Melanie Arellano\Unit3ecuaciones.dfm=C:\Users\Traducciones\Documents\Melanie\Cole\Programación\Melanie Arellano\Unit3.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

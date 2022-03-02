@@ -1,0 +1,49 @@
+unit Unit8;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs,Stdctrls;
+
+type
+  TForm8 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Button1: TButton;
+    Label6: TLabel;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form8: TForm8;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm8.Button1Click(Sender: TObject);
+var a,b,c,d,discriminante:real;
+begin
+a:= strtofloatdef (edit1.Text,0);
+b:= strtofloatdef (edit2.Text,0);
+c:= strtofloatdef (edit3.Text,0);
+d:= strtofloatdef (edit4.Text,0);
+discriminante:= (sqr((2*c*d)-(a)))-(4*((sqr(c))*((sqr(d))-b)));
+edit5.Text:= floattostr(discriminante)
+end;
+
+end.

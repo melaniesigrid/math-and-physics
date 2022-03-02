@@ -1,0 +1,51 @@
+object Form17: TForm17
+  Left = 0
+  Top = 0
+  Caption = 'Matrices y Vectores'
+  ClientHeight = 291
+  ClientWidth = 477
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 112
+    Top = 32
+    Width = 257
+    Height = 49
+    Caption = 'Suma y resta de Matrices'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 112
+    Top = 96
+    Width = 257
+    Height = 49
+    Caption = 'Multiplicaci'#243'n de Vectores'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 112
+    Top = 168
+    Width = 257
+    Height = 49
+    Caption = 'Vector * Escalar'
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 112
+    Top = 232
+    Width = 257
+    Height = 49
+    Caption = 'Matriz * Matriz'
+    TabOrder = 3
+  end
+end

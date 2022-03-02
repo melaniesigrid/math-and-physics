@@ -1,0 +1,72 @@
+object Form23: TForm23
+  Left = 0
+  Top = 0
+  Caption = 'Trasposici'#243'n de Matrices'
+  ClientHeight = 351
+  ClientWidth = 504
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 80
+    Top = 248
+    Width = 73
+    Height = 25
+    Caption = 'Transpuesta'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 32
+    Top = 256
+    Width = 33
+    Height = 17
+    Caption = '+'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 32
+    Top = 280
+    Width = 33
+    Height = 17
+    Caption = '-'
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 80
+    Top = 279
+    Width = 73
+    Height = 25
+    Caption = 'Rellenar'
+    TabOrder = 3
+    OnClick = Button4Click
+  end
+  object StringGrid1: TStringGrid
+    Left = 8
+    Top = 32
+    Width = 225
+    Height = 193
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 4
+  end
+  object StringGrid2: TStringGrid
+    Left = 256
+    Top = 32
+    Width = 240
+    Height = 193
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 5
+  end
+end

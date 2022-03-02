@@ -1,0 +1,67 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 335
+  ClientWidth = 464
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 24
+    Width = 107
+    Height = 25
+    Caption = 'Matem'#225'tica'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 32
+    Top = 80
+    Width = 409
+    Height = 33
+    Caption = 'Ecuaciones'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object MainMenu1: TMainMenu
+    Left = 208
+    Top = 16
+    object Matemtica1: TMenuItem
+      Caption = 'Matem'#225'tica'
+      object Ecuaciones1: TMenuItem
+        Caption = 'Ecuaciones'
+      end
+    end
+    object Fsica1: TMenuItem
+      Caption = 'F'#237'sica'
+    end
+    object N1: TMenuItem
+      Caption = '?'
+      object Calculadora1: TMenuItem
+        Caption = 'Calculadora'
+      end
+      object Conversiones1: TMenuItem
+        Caption = 'Conversiones'
+      end
+    end
+  end
+end
